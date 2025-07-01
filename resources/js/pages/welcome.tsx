@@ -14,8 +14,8 @@ export default function Welcome() {
             {/* Glassmorphism Navigation */}
             <header className="fixed w-full z-50">
                 <div className="container mx-auto px-6 py-4">
-                    <nav className="backdrop-blur-lg bg-white/5 border border-white/10 rounded-full px-6 py-3 flex items-center justify-between shadow-lg">
-                        <div className="text-2xl font-bold text-white">Peso<span className="text-amber-400">Chain</span></div>
+                    <nav className="backdrop-blur-lg bg-black/5 border border-white/10 rounded-full px-6 py-3 flex items-center justify-between shadow-lg">
+                        <div className="text-2xl font-bold text-white">Peso<span className="text-yellow-500">Chain</span></div>
                         <div className="flex items-center gap-3">
                             {auth.user ? (
                                 <Link
@@ -46,7 +46,7 @@ export default function Welcome() {
             </header>
 
             {/* Hero Section with Animated Gradient */}
-            <section className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900 text-white pt-24 pb-20 overflow-hidden">
+            <section className="min-h-screen bg-black text-white pt-24 pb-20 overflow-hidden">
                 <div className="absolute inset-0 opacity-20">
                     <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
                     <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-amber-500 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
@@ -57,24 +57,24 @@ export default function Welcome() {
                     <div className="flex flex-col lg:flex-row items-center">
                         <div className="lg:w-1/2 mb-16 lg:mb-0">
                             <div className="inline-block bg-white/10 backdrop-blur-sm border border-white/10 px-4 py-1 rounded-full mb-6">
-                                <span className="text-amber-400">NEW</span> Blockchain-powered remittance
+                                <span className="text-yellow-500">NEW</span> Blockchain-powered remittance
                             </div>
                             <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-                                Send Money Home <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-300">Faster</span> & <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-300">Cheaper</span>
+                                Send Money Home <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-400">Faster</span> & <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-400">Cheaper</span>
                             </h1>
-                            <p className="text-xl opacity-90 mb-10 max-w-lg">
+                            <p className="text-xl opacity-90 mb-10 max-w-lg text-white">
                                 OFWs save up to 85% on fees with our blockchain technology. Instant transfers to any bank, e-wallet, or cash pickup in the Philippines.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Link
                                     href={route('register')}
-                                    className="px-8 py-4 bg-gradient-to-r from-amber-400 to-amber-500 text-gray-900 font-bold rounded-xl hover:shadow-lg hover:shadow-amber-500/30 transition-all duration-300 text-center"
+                                    className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-gray-900 font-bold rounded-xl hover:shadow-lg hover:shadow-yellow-500/30 transition-all duration-300 text-center"
                                 >
                                     Start Sending Now
                                 </Link>
                                 <Link
                                     href="#how-it-works"
-                                    className="px-8 py-4 border border-white/20 bg-white/5 backdrop-blur-sm rounded-xl hover:bg-white/10 transition-all duration-300 text-center"
+                                    className="border border-white/20 bg-black/5 backdrop-blur-sm rounded-xl hover:bg-black/10 transition-all duration-300 text-center"
                                 >
                                     See How It Works
                                 </Link>
@@ -91,25 +91,25 @@ export default function Welcome() {
                                 <div>
                                     <div className="flex items-center">
                                         {[1, 2, 3, 4, 5].map((star) => (
-                                            <svg key={star} className="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                                            <svg key={star} className="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
                                                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                             </svg>
                                         ))}
                                     </div>
-                                    <p className="text-sm mt-1 opacity-80">Trusted by 50,000+ OFWs worldwide</p>
+                                    <p className="text-sm mt-1 opacity-80 text-white">Trusted by 50,000+ OFWs worldwide</p>
                                 </div>
                             </div>
                         </div>
 
                         <div className="lg:w-1/2 relative">
                             <div className="relative">
-                                <div className="absolute -top-10 -right-10 w-64 h-64 bg-amber-400 rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob"></div>
+                                <div className="absolute -top-10 -right-10 w-64 h-64 bg-yellow-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob"></div>
                                 <div className="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden shadow-2xl">
-                                    <div className="p-1 bg-gradient-to-r from-blue-500 to-purple-600">
+                                    <div className="p-1 bg-gradient-to-r from-yellow-500 to-yellow-600">
                                         <div className="bg-gray-900 p-6 rounded-xl">
                                             <div className="flex justify-between items-center mb-8">
                                                 <div className="text-2xl font-bold">PesoChain</div>
-                                                <div className="text-sm bg-gradient-to-r from-amber-400 to-amber-500 text-transparent bg-clip-text font-medium">BLOCKCHAIN REMITTANCE</div>
+                                                <div className="text-sm bg-gradient-to-r from-yellow-500 to-yellow-600 text-transparent bg-clip-text font-medium">BLOCKCHAIN REMITTANCE</div>
                                             </div>
                                             
                                             <div className="space-y-6">
@@ -118,7 +118,7 @@ export default function Welcome() {
                                                     <div className="flex items-center justify-between">
                                                         <div className="text-2xl font-bold">100 USD</div>
                                                         <div className="text-sm text-gray-400">=</div>
-                                                        <div className="text-2xl font-bold text-amber-400">5,600 PHP</div>
+                                                        <div className="text-2xl font-bold text-yellow-500">5,600 PHP</div>
                                                     </div>
                                                 </div>
                                                 
@@ -136,7 +136,7 @@ export default function Welcome() {
                                                 </div>
                                             </div>
                                             
-                                            <button className="w-full mt-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium rounded-lg hover:shadow-lg transition-all">
+                                            <button className="w-full mt-6 py-3 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-medium rounded-lg hover:shadow-lg transition-all">
                                                 Confirm Transfer
                                             </button>
                                         </div>
@@ -144,7 +144,7 @@ export default function Welcome() {
                                 </div>
                             </div>
                             
-                            <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-purple-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob animation-delay-4000"></div>
+                            <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-yellow-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob animation-delay-4000"></div>
                         </div>
                     </div>
                 </div>
@@ -155,19 +155,19 @@ export default function Welcome() {
                 <div className="container mx-auto px-6">
                     <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-80">
                         <div className="text-center">
-                            <div className="text-3xl font-bold text-amber-400 mb-1">1.2M+</div>
+                            <div className="text-3xl font-bold text-yellow-500 mb-1">1.2M+</div>
                             <div className="text-sm text-gray-400">Transactions</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-3xl font-bold text-amber-400 mb-1">85%</div>
+                            <div className="text-3xl font-bold text-yellow-500 mb-1">85%</div>
                             <div className="text-sm text-gray-400">Savings vs Banks</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-3xl font-bold text-amber-400 mb-1">24s</div>
+                            <div className="text-3xl font-bold text-yellow-500 mb-1">24s</div>
                             <div className="text-sm text-gray-400">Average Transfer Time</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-3xl font-bold text-amber-400 mb-1">50K+</div>
+                            <div className="text-3xl font-bold text-yellow-500 mb-1">50K+</div>
                             <div className="text-sm text-gray-400">OFWs Served</div>
                         </div>
                     </div>
@@ -179,9 +179,9 @@ export default function Welcome() {
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
                         <div className="inline-block bg-white/10 backdrop-blur-sm border border-white/10 px-4 py-1 rounded-full mb-4">
-                            <span className="text-amber-400">WHY PESOCHAIN</span>
+                            <span className="text-yellow-500">WHY PESOCHAIN</span>
                         </div>
-                        <h2 className="text-4xl font-bold mb-4">Remittance <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-300">Reinvented</span></h2>
+                        <h2 className="text-4xl font-bold mb-4">Remittance <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-600">Reinvented</span></h2>
                         <p className="text-xl opacity-80 max-w-2xl mx-auto">
                             Traditional remittance is slow and expensive. We're changing that with blockchain technology.
                         </p>
@@ -245,7 +245,7 @@ export default function Welcome() {
                             }
                         ].map((feature, index) => (
                             <div key={index} className="bg-gray-800/50 hover:bg-gray-800/70 border border-white/10 rounded-xl p-8 transition-all hover:-translate-y-1">
-                                <div className="w-14 h-14 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg flex items-center justify-center text-gray-900 mb-6">
+                                <div className="w-14 h-14 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-lg flex items-center justify-center text-gray-900 mb-6">
                                     {feature.icon}
                                 </div>
                                 <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
@@ -261,16 +261,16 @@ export default function Welcome() {
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
                         <div className="inline-block bg-white/10 backdrop-blur-sm border border-white/10 px-4 py-1 rounded-full mb-4">
-                            <span className="text-amber-400">SIMPLE PROCESS</span>
+                            <span className="text-yellow-500">SIMPLE PROCESS</span>
                         </div>
-                        <h2 className="text-4xl font-bold mb-4">How <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-300">PesoChain</span> Works</h2>
+                        <h2 className="text-4xl font-bold mb-4">How <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-600">PesoChain</span> Works</h2>
                         <p className="text-xl opacity-80 max-w-2xl mx-auto">
                             Sending money home takes just minutes with our easy 3-step process.
                         </p>
                     </div>
 
                     <div className="relative">
-                        <div className="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-amber-500 rounded-full -translate-y-1/2"></div>
+                        <div className="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-full -translate-y-1/2"></div>
                         
                         <div className="grid md:grid-cols-3 gap-8 relative z-10">
                             {[
@@ -306,9 +306,9 @@ export default function Welcome() {
                                 }
                             ].map((step, index) => (
                                 <div key={index} className="bg-gray-900 border border-white/10 rounded-xl p-8 hover:shadow-lg transition-all">
-                                    <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-xl font-bold mb-6 relative">
+                                    <div className="w-14 h-14 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center text-white text-xl font-bold mb-6 relative">
                                         {step.step}
-                                        <div className="absolute -top-2 -right-2 w-8 h-8 bg-amber-400 rounded-full flex items-center justify-center text-gray-900 text-sm">
+                                        <div className="absolute -top-2 -right-2 w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center text-gray-900 text-sm">
                                             {step.icon}
                                         </div>
                                     </div>
@@ -326,9 +326,9 @@ export default function Welcome() {
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
                         <div className="inline-block bg-white/10 backdrop-blur-sm border border-white/10 px-4 py-1 rounded-full mb-4">
-                            <span className="text-amber-400">OFW TESTIMONIALS</span>
+                            <span className="text-yellow-500">OFW TESTIMONIALS</span>
                         </div>
-                        <h2 className="text-4xl font-bold mb-4">Trusted by <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-300">Filipinos Worldwide</span></h2>
+                        <h2 className="text-4xl font-bold mb-4">Trusted by <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-600">Filipinos Worldwide</span></h2>
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -354,7 +354,7 @@ export default function Welcome() {
                         ].map((testimonial, index) => (
                             <div key={index} className="bg-gray-800/50 border border-white/10 rounded-xl p-8 hover:shadow-lg transition-all">
                                 <div className="flex items-center mb-6">
-                                    <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center text-gray-900 font-bold mr-4">
+                                    <div className="w-12 h-12 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center text-gray-900 font-bold mr-4">
                                         {testimonial.name.charAt(0)}
                                     </div>
                                     <div>
@@ -365,7 +365,7 @@ export default function Welcome() {
                                 <p className="text-gray-300 mb-6">"{testimonial.quote}"</p>
                                 <div className="flex items-center">
                                     {[...Array(testimonial.stars)].map((_, i) => (
-                                        <svg key={i} className="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                                        <svg key={i} className="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
                                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                         </svg>
                                     ))}
@@ -377,28 +377,28 @@ export default function Welcome() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-20 bg-gradient-to-br from-blue-900 to-indigo-900 relative overflow-hidden">
+            <section className="py-20 bg-gradient-to-br from-yellow-900 to-yellow-600 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-20">
-                    <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
-                    <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-amber-500 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+                    <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-yellow-500 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+                    <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-yellow-500 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
                 </div>
                 
                 <div className="container mx-auto px-6 relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
-                        <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Save on <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-300">Remittance Fees</span>?</h2>
+                        <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Save on <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-600">Remittance Fees</span>?</h2>
                         <p className="text-xl opacity-90 mb-10">
                             Join thousands of OFWs who are already enjoying fast, low-cost money transfers to the Philippines.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link
                                 href={route('register')}
-                                className="px-8 py-4 bg-gradient-to-r from-amber-400 to-amber-500 text-gray-900 font-bold rounded-xl hover:shadow-lg hover:shadow-amber-500/30 transition-all duration-300 text-center"
+                                className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-gray-900 font-bold rounded-xl hover:shadow-lg hover:shadow-yellow-500/30 transition-all duration-300 text-center"
                             >
                                 Get Started for Free
                             </Link>
                             <Link
                                 href="#features"
-                                className="px-8 py-4 border border-white/20 bg-white/5 backdrop-blur-sm rounded-xl hover:bg-white/10 transition-all duration-300 text-center"
+                                className="border border-white/20 bg-black/5 backdrop-blur-sm rounded-xl hover:bg-black/10 transition-all duration-300 text-center"
                             >
                                 Learn More
                             </Link>
@@ -412,7 +412,7 @@ export default function Welcome() {
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
                         <div className="col-span-2">
-                            <div className="text-2xl font-bold mb-4">Peso<span className="text-amber-400">Chain</span></div>
+                            <div className="text-2xl font-bold mb-4">Peso<span className="text-yellow-500">Chain</span></div>
                             <p className="text-gray-400 mb-4">
                                 Blockchain-powered remittance for the global Filipino community.
                             </p>
